@@ -1,133 +1,135 @@
-🧬 Medicine Analyzer App
+🧬 Medicine Insight App
 
-A production-ready Flutter mobile application designed to help people understand medicines and health conditions in a clear, structured, and responsible way.
+A fully functional Flutter mobile application created to help users better understand medicines and health conditions in a simple, organized, and responsible manner.
 
-This app focuses on trust, simplicity, and safety, combining modern UI design with AI-powered analysis to make medical information easier to understand — without replacing professional medical advice.
+The app prioritizes clarity, safety, and reliability, combining a modern user interface with AI-driven insights to make medical information more accessible — while never replacing professional healthcare advice.
 
-✨ Why This App Exists
+✨ Purpose of the App
 
-Understanding medicines shouldn’t feel confusing or risky.
-Medicine Analyzer was built to:
+Medical information can often feel overwhelming or unclear.
+Medicine Insight was developed to:
 
-Explain medicines in plain, structured language
+Present medicine details in a simple and structured format
 
-Reduce misinformation
+Minimize confusion and misinformation
 
-Encourage responsible usage
+Promote safe and responsible usage
 
-Maintain a calm, medical-grade experience
+Deliver a calm and trustworthy user experience
 
-⚠️ This app is for educational purposes only and does not replace professional medical advice.
+⚠️ This application is intended for educational use only and is not a substitute for medical professionals.
 
-🎯 Core Features
-🔍 Multiple Input Methods
+🎯 Key Features
 
-Search by medicine name
+🔍 Flexible Input Options
 
-Scan medicine using camera
+Search medicines by name
 
-Upload medicine images from gallery
+Scan medicines using the device camera
 
-OCR extraction with manual correction support
+Upload images from the gallery
 
-🧠 AI-Powered Intelligence
+Extract text via OCR with manual editing support
+
+🧠 AI-Driven Analysis
 
 Powered by Groq AI
 
-Uses carefully designed prompts
+Uses well-crafted prompts for accurate results
 
-Returns structured JSON for reliable UI rendering
+Generates structured JSON responses for consistent UI
 
-Medical information is neutral and non-prescriptive
+Ensures neutral and non-prescriptive medical explanations
 
-💊 Medicine Analysis (Categorized & Clear)
+💊 Detailed Medicine Breakdown
 
-Each medicine is broken into easy-to-read sections:
+Each medicine is explained in clear sections:
 
-Why the medicine is used
+Purpose of the medicine
 
-When to take it (timing, before/after food)
+Recommended timing (before/after meals)
 
-How to take it (tablet, syrup, etc.)
+Usage method (tablet, syrup, etc.)
 
-General dosage guidance (non-prescriptive)
+General dosage information (non-prescriptive)
 
-Possible side effects (common & serious)
+Possible side effects (common and serious)
 
-Who should avoid it
+Precautions and who should avoid it
 
-Alternative medicines
+Alternative medicine options
 
-Food & lifestyle guidance
+Food and lifestyle suggestions
 
 Missed dose instructions
 
-Storage instructions
+Storage recommendations
 
-All information is displayed in glassy, modern cards for clarity.
+All details are displayed using clean, glass-style cards for better readability.
 
-🩺 Health Condition Guidance
+🩺 Health Condition Support
 
-Users can also enter a health condition or illness and receive:
+Users can also enter a health condition and receive:
 
-Recommended foods
+Suggested foods
 
 Foods to avoid
 
-Helpful daily habits
+Healthy daily habits
 
-Guidance on when to consult a doctor
+Advice on when to consult a doctor
 
-🎨 UI & Design Philosophy
+🎨 Design Approach
 
-Glassmorphism UI with blur & transparency
+Glassmorphism-inspired interface
 
-Soft gradients (blue, teal, purple tones)
+Smooth gradients (blue, teal, purple tones)
 
-Fully supported Dark Mode
+Full Dark Mode support
 
-Smooth animations & loading states
+Fluid animations and loading effects
 
-Calm language and visual hierarchy
+Clean typography and calming visuals
 
-Designed to feel trustworthy, modern, and human
+The goal is to create a professional, user-friendly, and trustworthy experience.
 
-🧱 Architecture Overview
+🧱 Project Structure
 
-The project follows Clean Architecture, making it scalable and maintainable.
+Built using Clean Architecture for scalability and maintainability:
 
 lib/
-├── core/              # App constants, themes, utilities
-├── data/              # API calls, models, repositories
-├── domain/            # Business entities & interfaces
-└── presentation/      # UI, providers, widgets
+├── core/              # Constants, themes, utilities
+├── data/              # APIs, models, repositories
+├── domain/            # Business logic & interfaces
+└── presentation/      # UI, state management, widgets
 
-State Management
+📦 State Management
 
-Riverpod
+Riverpod for efficient state handling
 
-Async handling with FutureProvider
+FutureProvider for async operations
 
-Local state via StateProvider
+StateProvider for local UI state
 
-🛠️ Tech Stack
+🛠️ Technology Stack
 
 Flutter (3.9.2+)
 
-Riverpod (state management)
+Riverpod
 
-Dio (networking)
+Dio (API handling)
 
-Groq AI (medicine & condition analysis)
+Groq AI
 
 Google ML Kit (OCR)
 
-SharedPreferences (local storage)
+SharedPreferences
 
-flutter_dotenv (environment variables)
+flutter_dotenv
 
-🚀 Getting Started
-Prerequisites
+🚀 Setup Guide
+
+Requirements
 
 Flutter SDK (≥ 3.9.2)
 
@@ -135,109 +137,112 @@ Dart SDK
 
 Groq API key
 
-Installation
+Installation Steps
 
-1️⃣ Clone the repository
+1️⃣ Clone the project
 
 git clone https://github.com/akshaypatra00/medicine-analyzer-flutter.git
 cd medicine-analyzer-flutter
-
 
 2️⃣ Install dependencies
 
 flutter pub get
 
-
-3️⃣ Generate JSON files
+3️⃣ Generate required files
 
 flutter pub run build_runner build
 
+4️⃣ Configure environment variables
+Create a .env file:
 
-4️⃣ Set up environment variables
-Create a .env file in the root directory:
+GROQ_API_KEY=your_api_key_here
 
-GROQ_API_KEY=your_groq_api_key_here
-
-
-5️⃣ Run the app
+5️⃣ Run the application
 
 flutter run
 
-📱 Screens Included
+📱 App Screens
 
 Splash Screen
 
 Home (Search & Scan)
 
-Medicine Analysis
+Medicine Details
 
-Condition Analysis
+Condition Insights
 
 Search History
 
-Settings & Legal Info
+Settings & Legal
 
-🔐 Safety & Responsibility
-Medical Safety Rules
+🔐 Safety Guidelines
 
-❌ No diagnosis
+What the app does NOT do:
 
-❌ No prescriptions
+❌ Provide diagnoses
 
-❌ No exact dosage recommendations
+❌ Prescribe medicines
 
-✅ Neutral, educational information
+❌ Suggest exact dosages
 
-✅ Professional consultation encouraged
+What it DOES:
 
-Clear disclaimers are shown throughout the app.
+✅ Provide educational content
 
-🧪 Testing & Build
+✅ Maintain neutral explanations
+
+✅ Encourage professional consultation
+
+Clear disclaimers are shown across the app.
+
+🧪 Testing & Deployment
 
 Run tests:
 
 flutter test
 
-
-Build for production:
+Build for release:
 
 flutter build apk     # Android
 flutter build ipa     # iOS
 
-🧠 Groq AI Usage
+🧠 AI Integration (Groq)
 
 The app uses structured prompts to ensure:
 
-Predictable JSON responses
+Consistent JSON output
 
-Medical neutrality
+Neutral tone
 
 Clear categorization
 
-Safe explanations
+Safe and understandable explanations
 
-Example prompts:
+Example queries:
 
 Analyze this medicine: Paracetamol
+
 What should I eat if I have this condition: Fever
 
 👨‍💻 Developer
 
 Developed by:
-Akshay Patra
+Prathmesh Pimpare
 
-Flutter Developer
+Flutter Developer focused on:
 
-Focused on clean architecture & real-world usability
+Clean Architecture
 
-Passionate about building trust-focused, user-safe applications
+Real-world problem solving
+
+Building safe and user-centric applications
 
 📄 License
 
-This project is licensed under the MIT License.
+Licensed under the MIT License.
 
-⚠️ Final Medical Disclaimer
+⚠️ Medical Disclaimer
 
-This application provides educational information only.
-It is not a substitute for professional medical advice, diagnosis, or treatment.
-Always consult a qualified healthcare professional before making health decisions.
+This application is for informational purposes only.
+It does not replace professional medical advice, diagnosis, or treatment.
+Always consult a qualified healthcare provider before making any health-related decisions.
