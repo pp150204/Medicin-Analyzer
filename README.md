@@ -1,123 +1,66 @@
 🧬 Medicine Insight App
 
-A fully functional Flutter mobile application created to help users better understand medicines and health conditions in a simple, organized, and responsible manner.
+A Flutter mobile app that helps users understand medicines and health conditions in a simple, safe, and structured way using AI-powered analysis.
 
-The app prioritizes clarity, safety, and reliability, combining a modern user interface with AI-driven insights to make medical information more accessible — while never replacing professional healthcare advice.
+⚠️ For educational purposes only. Not a replacement for professional medical advice.
 
-✨ Purpose of the App
+✨ Features
 
-Medical information can often feel overwhelming or unclear.
-Medicine Insight was developed to:
-
-Present medicine details in a simple and structured format
-
-Minimize confusion and misinformation
-
-Promote safe and responsible usage
-
-Deliver a calm and trustworthy user experience
-
-⚠️ This application is intended for educational use only and is not a substitute for medical professionals.
-
-🎯 Key Features
-
-🔍 Flexible Input Options
+🔍 Search & Scan
 
 Search medicines by name
 
-Scan medicines using the device camera
+Scan via camera or upload images
 
-Upload images from the gallery
+OCR text extraction with manual correction
 
-Extract text via OCR with manual editing support
+🧠 AI Analysis (Groq)
 
-🧠 AI-Driven Analysis
+Structured, reliable JSON responses
 
-Powered by Groq AI
+Clear, non-prescriptive explanations
 
-Uses well-crafted prompts for accurate results
+💊 Medicine Details
 
-Generates structured JSON responses for consistent UI
+Usage, timing, and intake method
 
-Ensures neutral and non-prescriptive medical explanations
+Side effects & precautions
 
-💊 Detailed Medicine Breakdown
+Alternatives & storage info
 
-Each medicine is explained in clear sections:
+Food & lifestyle guidance
 
-Purpose of the medicine
+🩺 Health Condition Guidance
 
-Recommended timing (before/after meals)
-
-Usage method (tablet, syrup, etc.)
-
-General dosage information (non-prescriptive)
-
-Possible side effects (common and serious)
-
-Precautions and who should avoid it
-
-Alternative medicine options
-
-Food and lifestyle suggestions
-
-Missed dose instructions
-
-Storage recommendations
-
-All details are displayed using clean, glass-style cards for better readability.
-
-🩺 Health Condition Support
-
-Users can also enter a health condition and receive:
-
-Suggested foods
+Recommended foods & habits
 
 Foods to avoid
 
-Healthy daily habits
+When to consult a doctor
 
-Advice on when to consult a doctor
+⏰ Medicine Reminder (New)
 
-🎨 Design Approach
+Set reminders to take medicines on time
 
-Glassmorphism-inspired interface
+Helps improve consistency and adherence
 
-Smooth gradients (blue, teal, purple tones)
+🎨 UI & Design
 
-Full Dark Mode support
+Glassmorphism UI
 
-Fluid animations and loading effects
+Smooth gradients & animations
 
-Clean typography and calming visuals
+Dark mode support
 
-The goal is to create a professional, user-friendly, and trustworthy experience.
+Clean and calming interface
 
-🧱 Project Structure
+🧱 Tech Stack
 
-Built using Clean Architecture for scalability and maintainability:
-
-lib/
-├── core/              # Constants, themes, utilities
-├── data/              # APIs, models, repositories
-├── domain/            # Business logic & interfaces
-└── presentation/      # UI, state management, widgets
-
-📦 State Management
-
-Riverpod for efficient state handling
-
-FutureProvider for async operations
-
-StateProvider for local UI state
-
-🛠️ Technology Stack
-
-Flutter (3.9.2+)
+Flutter
 
 Riverpod
 
-Dio (API handling)
+Dio
 
 Groq AI
 
@@ -127,122 +70,50 @@ SharedPreferences
 
 flutter_dotenv
 
-🚀 Setup Guide
-
-Requirements
-
-Flutter SDK (≥ 3.9.2)
-
-Dart SDK
-
-Groq API key
-
-Installation Steps
-
-1️⃣ Clone the project
-
+🚀 Setup
 git clone https://github.com/akshaypatra00/medicine-analyzer-flutter.git
 cd medicine-analyzer-flutter
-
-2️⃣ Install dependencies
-
 flutter pub get
-
-3️⃣ Generate required files
-
 flutter pub run build_runner build
 
-4️⃣ Configure environment variables
-Create a .env file:
+Create .env file:
 
 GROQ_API_KEY=your_api_key_here
 
-5️⃣ Run the application
+Run app:
 
 flutter run
+📱 Screens
 
-📱 App Screens
-
-Splash Screen
+Splash
 
 Home (Search & Scan)
 
-Medicine Details
+Medicine Analysis
 
-Condition Insights
+Condition Analysis
 
-Search History
+Reminder Setup
 
-Settings & Legal
+History & Settings
 
-🔐 Safety Guidelines
+🔐 Safety
 
-What the app does NOT do:
+❌ No diagnosis or prescriptions
 
-❌ Provide diagnoses
+❌ No exact dosage suggestions
 
-❌ Prescribe medicines
-
-❌ Suggest exact dosages
-
-What it DOES:
-
-✅ Provide educational content
-
-✅ Maintain neutral explanations
-
-✅ Encourage professional consultation
-
-Clear disclaimers are shown across the app.
-
-🧪 Testing & Deployment
-
-Run tests:
-
-flutter test
-
-Build for release:
-
-flutter build apk     # Android
-flutter build ipa     # iOS
-
-🧠 AI Integration (Groq)
-
-The app uses structured prompts to ensure:
-
-Consistent JSON output
-
-Neutral tone
-
-Clear categorization
-
-Safe and understandable explanations
-
-Example queries:
-
-Analyze this medicine: Paracetamol
-
-What should I eat if I have this condition: Fever
+✅ Educational & neutral information only
 
 👨‍💻 Developer
 
-Developed by:
 Prathmesh Pimpare
-
-Flutter Developer focused on:
-
-Clean Architecture
-
-Real-world problem solving
-
-Building safe and user-centric applications
+Flutter Developer
 
 📄 License
 
-Licensed under the MIT License.
+MIT License
 
-⚠️ Medical Disclaimer
+⚠️ Disclaimer
 
-This application is for informational purposes only.
-It does not replace professional medical advice, diagnosis, or treatment.
-Always consult a qualified healthcare provider before making any health-related decisions.
+This app provides informational content only. Always consult a qualified healthcare professional before making medical decisions.
